@@ -1,0 +1,4 @@
+<label>Add Task:<input id="add-task"/></label>
+<div id="tasks">
+</div>
+<div id="footer"></div>
