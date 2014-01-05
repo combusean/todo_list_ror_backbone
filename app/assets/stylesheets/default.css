@@ -1,0 +1,61 @@
+body {
+  background-color: #dedede; 
+}
+#content {
+  width: 400px;
+  margin: 100px auto auto auto;
+  font-family: 'Alegreya Sans', sans-serif; 
+  font-size: 12pt; 
+}
+
+#title {
+  font-weight: bold;
+  font-size: 44pt;
+}
+
+#app {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.task-container {
+  border-bottom: 1px solid;
+}
+
+.task-name {
+  overflow: auto;
+  padding: 20px 12px 20px 12px;
+}
+
+.task-remove {
+  float: right;
+  font-size: 10pt;
+  font-weight: bold;
+  padding: 20px 12px 20px 12px;
+}
+
+#tasks-footer {
+  padding: 15px 15px 15px 15px;
+}
+#task-input-container {
+  overflow: auto;
+}
+
+#task-name-input {
+ width: 300px;
+}
+
+#task-submit-container {
+  float: right;
+}
+
+#task-submit-button {
+  background-color: #dedede;
+  border-radius: 10px;
+  width: 55px;
+}
+
+
+
+

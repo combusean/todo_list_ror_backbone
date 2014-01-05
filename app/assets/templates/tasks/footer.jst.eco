@@ -1,1 +1,0 @@
-<span>Remaining: <span id='task-count'><%= @remaining %></span></span>

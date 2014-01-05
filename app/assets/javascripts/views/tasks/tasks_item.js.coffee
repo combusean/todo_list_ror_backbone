@@ -1,7 +1,7 @@
 class TodoList.Views.TasksItem extends Backbone.View
   template: JST['tasks/item']
   events: 
-    'click a.remove-task' : 'removeTask'
+    'click a.task-remove-delete' : 'removeTask'
   initialize: ->
     @model.bind 'destroy', @remove, @
   render: ->

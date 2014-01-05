@@ -2,7 +2,8 @@ class TodoList.Views.TasksIndex extends Backbone.View
   el: '#app'
   template: JST['tasks/index']
   events: 
-    'keypress #add-task' : 'createOnEnter'
+    'keypress #task-name-input': 'createOnEnter',
+    'click #task-submit-button': 'createOnSubmit'
   initialize: ->
     @collection.bind 'reset', @render, @
     @collection.bind 'add', @addTask, @
@@ -12,7 +13,6 @@ class TodoList.Views.TasksIndex extends Backbone.View
     footerView.render()
 
     @collection.each (task) =>
-      console.log('hello')
       view = new TodoList.Views.TasksItem model: task
       @$('#tasks').append(view.render().el)
     
@@ -23,5 +23,9 @@ class TodoList.Views.TasksIndex extends Backbone.View
     @
   createOnEnter: (event) ->
     return if event.keyCode != 13
-    @collection.create name: @$('#add-task').val()
-    @$('#add-task').val('')
+    @collection.create name: @$('#task-name-input').val()
+    @$('#task-name-input').val('')
+    
+  createOnSubmit: (event) ->
+    @collection.create name: @$('#task-name-input').val()
+    @$('#task-name-input').val('')

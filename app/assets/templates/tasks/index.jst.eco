@@ -1,4 +1,13 @@
-<label>Add Task:<input id="add-task"/></label>
 <div id="tasks">
 </div>
-<div id="footer"></div>
+
+<div id="tasks-footer">
+  <div id="task-submit-container">
+    <button id="task-submit-button">Add</button>
+  </div>
+  <div id="task-input-container">
+    <input id="task-name-input"/>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
