@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(:version => 20130323190223) do
 
   create_table "tasks", :force => true do |t|
     t.string   "name"
-    t.boolean  "complete"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "completed",  :default => 0
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
 end
