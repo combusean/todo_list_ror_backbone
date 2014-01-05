@@ -3,6 +3,5 @@
   <div class="task-name">
     <input type=checkbox class="task-completed-check" <%= if (@task.get("completed") == 1) then 'checked="checked"' else ''%>"/> 
     <%= @task.get 'name' %>
-    <% console.log @task.get('completed') %>
   </div>
 </div>
