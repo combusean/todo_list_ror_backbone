@@ -2,13 +2,19 @@
 <html>
 <head>
   <title>TodoList</title>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="app">
-    <%= yield %>
+  <div id="content">
+    <div id="title">
+      To Do
+    </div>
+    <div id="app">
+      <%= yield %>
+    </div>
   </div>
 </body>
 </html>
