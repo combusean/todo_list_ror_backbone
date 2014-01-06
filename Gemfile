@@ -10,6 +10,7 @@ gem 'sqlite3'
 group :development, :test do
   gem 'guard-jasmine'
   gem 'jasminerice'
+  gem 'jasmine'
 end
 
 # Gems used only for assets and not required
