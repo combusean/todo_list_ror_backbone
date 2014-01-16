@@ -3,7 +3,7 @@ class TodoList.Views.TasksIndex extends Backbone.View
   template: JST['tasks/index']
   events: 
     'keypress #task-name-input': 'createOnEnter',
-    'click #task-submit-button': 'createOnSubmit'
+    'click #task-submit-button': 'createFromInput'
   initialize: ->
     @collection.bind 'reset', @render, @
     @collection.bind 'add', @addTask, @
@@ -23,9 +23,8 @@ class TodoList.Views.TasksIndex extends Backbone.View
     @
   createOnEnter: (event) ->
     return if event.keyCode != 13
-    @collection.create name: @$('#task-name-input').val()
-    @$('#task-name-input').val('')
+    createFromInput
     
-  createOnSubmit: (event) ->
+  createFromInput: (event) ->
     @collection.create name: @$('#task-name-input').val()
     @$('#task-name-input').val('')
