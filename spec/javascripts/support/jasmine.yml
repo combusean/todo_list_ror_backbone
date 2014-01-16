@@ -1,3 +1,4 @@
 # minimalist jasmine.yml configuration when leveraging asset pipeline
+src_dir: "app" 
 spec_files:
   - "**/*[Ss]pec.{js,coffee}"
