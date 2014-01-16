@@ -11,6 +11,10 @@ group :development, :test do
   gem 'guard-jasmine'
   gem 'jasminerice'
   gem 'jasmine'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'pry'
 end
 
 # Gems used only for assets and not required
